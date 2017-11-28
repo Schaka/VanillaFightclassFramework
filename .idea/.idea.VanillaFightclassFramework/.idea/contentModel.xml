@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Jonas\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_VanillaFightclassFramework.-1776460284.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Jonas\Documents\Visual Studio 2017\Projects\VanillaFightclassFramework" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="VanillaFightclassFramework" t="IncludeRecursive">
+        <e p="CombatUtil.cs" t="Include" />
+        <e p="Extensions.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="RotationAction.cs" t="Include" />
+        <e p="RotationLua.cs" t="Include" />
+        <e p="RotationRawAction.cs" t="Include" />
+        <e p="RotationSpell.cs" t="Include" />
+        <e p="RotationStep.cs" t="Include" />
+        <e p="VanillaFightclass.cs" t="Include" />
+        <e p="VanillaFightclassFramework.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="VanillaFightclassFramework.sln" t="IncludeFlat" />
+    </e>
+    <e p="F:\Games\WoW 1.12 EN\WRobot_1.12\FightClass" t="ExcludeRecursive" />
+  </component>
+</project>

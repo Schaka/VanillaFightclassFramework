@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="263e5779-d08c-40b1-a455-28bdb95cb541" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="VanillaFightclass.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/VanillaFightclass.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="43" column="74" lean-forward="true" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
+              <folding>
+                <marker date="1511814965567" expanded="false" signature="6:544" ph="..." />
+                <marker date="1511814965567" expanded="true" signature="578:7049" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="761:858" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="924:1063" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="1527:2753" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="2784:3328" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="3397:3505" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="3452:3499" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="3578:3994" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="3604:3988" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="4023:5903" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="4057:5897" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="4083:5643" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="4211:5629" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="4473:5610" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="4734:4844" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="4907:5110" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="4985:5084" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="5194:5310" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="5434:5588" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="5661:5757" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="5935:6029" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="5973:6023" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="6058:6482" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="6269:6435" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="6340:6423" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="6509:6842" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="6612:6680" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="6879:7046" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="7051:7068" ph="/* SETTINGS ... */" />
+                <marker date="1511814965567" expanded="true" signature="7133:8578" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="7402:7440" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="7537:7854" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="7555:7706" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="7734:7848" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="7885:8576" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="7903:8432" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="8048:8361" ph="{...}" />
+                <marker date="1511814965567" expanded="true" signature="8460:8548" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RotationRawAction.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="12" column="74" lean-forward="false" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+              <folding>
+                <marker date="1511814857027" expanded="false" signature="6:149" ph="..." />
+                <marker date="1511814857027" expanded="true" signature="191:653" ph="{...}" />
+                <marker date="1511814857027" expanded="true" signature="356:456" ph="{...}" />
+                <marker date="1511814857027" expanded="true" signature="517:584" ph="{...}" />
+                <marker date="1511814857027" expanded="true" signature="610:651" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RotationAction.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationAction.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1511776084671" expanded="false" signature="6:149" ph="..." />
+                <marker date="1511776084671" expanded="true" signature="175:253" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RotationLua.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationLua.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1511812208314" expanded="false" signature="6:177" ph="..." />
+                <marker date="1511812208314" expanded="true" signature="213:749" ph="{...}" />
+                <marker date="1511812208314" expanded="true" signature="350:428" ph="{...}" />
+                <marker date="1511812208314" expanded="true" signature="489:680" ph="{...}" />
+                <marker date="1511812208314" expanded="true" signature="540:615" ph="{...}" />
+                <marker date="1511812208314" expanded="true" signature="706:747" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RotationStep.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationStep.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1511776980873" expanded="false" signature="6:153" ph="..." />
+                <marker date="1511776980873" expanded="true" signature="173:1941" ph="{...}" />
+                <marker date="1511776980873" expanded="true" signature="530:692" ph="{...}" />
+                <marker date="1511776980873" expanded="true" signature="894:948" ph="{...}" />
+                <marker date="1511776980873" expanded="true" signature="1208:1286" ph="{...}" />
+                <marker date="1511776980873" expanded="true" signature="1317:1939" ph="{...}" />
+                <marker date="1511776980873" expanded="true" signature="1332:1578" ph="/* predicate is executed separately from targetfinder predicate ... */" />
+                <marker date="1511776980873" expanded="true" signature="1841:1911" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>RotationSpells</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/VanillaFightclass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationLua.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationStep.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs" />
+        <option value="$PROJECT_DIR$/VanillaFightclassFramework/VanillaFightclass.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VanillaFightclassFramework (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VanillaFightclassFramework (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="VanillaFightclassFramework" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_OUTPUT_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="263e5779-d08c-40b1-a455-28bdb95cb541" name="Default" comment="" />
+      <created>1511813892656</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511813892656</updated>
+      <workItem from="1511813893834" duration="1097000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1097000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationStep.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511776980873" expanded="false" signature="6:153" ph="..." />
+            <marker date="1511776980873" expanded="true" signature="173:1941" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="530:692" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="894:948" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1208:1286" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1317:1939" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1332:1578" ph="/* predicate is executed separately from targetfinder predicate ... */" />
+            <marker date="1511776980873" expanded="true" signature="1841:1911" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="74" lean-forward="false" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+          <folding>
+            <marker date="1511814857027" expanded="false" signature="6:149" ph="..." />
+            <marker date="1511814857027" expanded="true" signature="191:653" ph="{...}" />
+            <marker date="1511814857027" expanded="true" signature="356:456" ph="{...}" />
+            <marker date="1511814857027" expanded="true" signature="517:584" ph="{...}" />
+            <marker date="1511814857027" expanded="true" signature="610:651" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511776084671" expanded="false" signature="6:149" ph="..." />
+            <marker date="1511776084671" expanded="true" signature="175:253" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationLua.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511812208314" expanded="false" signature="6:177" ph="..." />
+            <marker date="1511812208314" expanded="true" signature="213:749" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="350:428" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="489:680" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="540:615" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="706:747" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/VanillaFightclass.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="43" column="74" lean-forward="true" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
+          <folding>
+            <marker date="1511814965567" expanded="false" signature="6:544" ph="..." />
+            <marker date="1511814965567" expanded="true" signature="578:7049" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="761:858" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="924:1063" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="1527:2753" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="2784:3328" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="3397:3505" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="3452:3499" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="3578:3994" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="3604:3988" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="4023:5903" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="4057:5897" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="4083:5643" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="4211:5629" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="4473:5610" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="4734:4844" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="4907:5110" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="4985:5084" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="5194:5310" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="5434:5588" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="5661:5757" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="5935:6029" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="5973:6023" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="6058:6482" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="6269:6435" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="6340:6423" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="6509:6842" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="6612:6680" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="6879:7046" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="7051:7068" ph="/* SETTINGS ... */" />
+            <marker date="1511814965567" expanded="true" signature="7133:8578" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="7402:7440" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="7537:7854" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="7555:7706" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="7734:7848" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="7885:8576" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="7903:8432" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="8048:8361" ph="{...}" />
+            <marker date="1511814965567" expanded="true" signature="8460:8548" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
