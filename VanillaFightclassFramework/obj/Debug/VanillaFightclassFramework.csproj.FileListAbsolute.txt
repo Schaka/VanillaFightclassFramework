@@ -1,0 +1,5 @@
+F:\Games\WoW 1.12 EN\WRobot_1.12\FightClass\VanillaFightclassFramework.dll
+F:\Games\WoW 1.12 EN\WRobot_1.12\FightClass\VanillaFightclassFramework.pdb
+C:\Users\Jonas\Documents\VanillaFightclassFramework\VanillaFightclassFramework\obj\Debug\VanillaFightclassFramework.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Documents\VanillaFightclassFramework\VanillaFightclassFramework\obj\Debug\VanillaFightclassFramework.dll
+C:\Users\Jonas\Documents\VanillaFightclassFramework\VanillaFightclassFramework\obj\Debug\VanillaFightclassFramework.pdb

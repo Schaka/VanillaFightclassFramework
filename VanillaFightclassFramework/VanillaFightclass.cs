@@ -55,7 +55,7 @@ public class Main : ICustomClass
         new RotationStep(new RotationSpell("Cone of Cold"), 2f, (s, t) => _LastSpell == "Frostbolt" && _LastCastTimeStamp.AddMilliseconds(500) > DateTime.Now && t.HaveAnyDebuff("Freeze", "Frostbite", "Frost Nova") && t.GetDistance <= 10, CombatUtil.BotTarget),
         new RotationStep(new RotationSpell("Frostbolt"), 3f, (s, t) => true, CombatUtil.BotTarget),
         new RotationStep(new RotationSpell("Fireball"), 4f, (s, t) => !Frostbolt.IsKnown(), CombatUtil.BotTarget),
-        new RotationStep(new RotationSpell("Shoot"), 5f, (s, t) => !Frostbolt.CanCast() && !Me.IsCast && _LastSpell != "Evocation" && !Me.CastingSpell("Evocation") && CombatUtil.CanWand(), CombatUtil.BotTarget),
+        new RotationStep(new RotationSpell("Shoot"), 5f, (s, t) => !Frostbolt.CanCast() && !Me.IsCast && !Me.CastingSpell("Evocation") && CombatUtil.CanWand(), CombatUtil.BotTarget),
     };
 
     public void Initialize()

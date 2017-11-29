@@ -27,20 +27,14 @@ public static class Extensions
         return unit.HaveBuff(name);
     }
 
-    public static bool IsCasting(this WoWUnit unit)
+    public static bool IsCasting(this WoWLocalPlayer me)
     {
-        return unit.IsCast;
+        return CombatUtil.IsCasting;
     }
 
-    public static bool CastingSpell(this WoWUnit unit, params string[] names)
+    public static bool CastingSpell(this WoWLocalPlayer me, params string[] names)
     {
-        foreach(string name in names){
-            if(name == unit.CastingSpell.Name)
-            {
-                return true;
-            }
-        }
-        return false;
+        return names.Any(name => name == me.CastingSpell.Name || name == CombatUtil.CurrentSpell);
     }
 
     public static bool HasMana(this WoWUnit unit)
@@ -51,14 +45,7 @@ public static class Extensions
 
     public static bool HaveAnyDebuff(this WoWUnit unit, params string[] names)
     {
-        foreach(string name in names)
-        {
-            if (unit.HaveBuff(name))
-            {
-                return true;
-            }
-        }
-        return false;
+        return names.Any(name => unit.HaveBuff(name));
     }
 
     public static bool IsCreatureType(this WoWUnit unit, string type)
@@ -67,7 +54,7 @@ public static class Extensions
         return Lua.LuaDoString<bool>(FormatLua(luaString, type, CombatUtil.GetLuaId(unit)), "isCreatureType");
     }
 
-    public static bool HaveAllDebuffs(this WoWUnit unit, params string[] names)
+    public static bool HaveAllBuffs(this WoWUnit unit, params string[] names)
     {
         foreach(string name in names)
         {

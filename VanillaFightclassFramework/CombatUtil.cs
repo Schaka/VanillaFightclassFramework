@@ -22,7 +22,10 @@ class CombatUtil
     private static readonly object LockTargeting = new object();
     private static bool _disableTargeting = false;
 
-    private static List<string> AreaSpells = new List<string>{
+    private static string _lastSpell;
+    private static DateTime _lastCastTimeStamp = DateTime.MinValue;
+
+    private static readonly List<string> AreaSpells = new List<string>{
         "Mass Dispel",
         "Blizzard",
         "Rain of Fire",
@@ -34,9 +37,15 @@ class CombatUtil
         "Distract"
     };
 
+    public static string CurrentSpell => ObjectManager.Me.CastingSpell != null ? ObjectManager.Me.CastingSpell.Name : _lastSpell;
+
+    public static bool IsCasting => ObjectManager.Me.IsCast || _lastCastTimeStamp > DateTime.Now;
+    
+    
     public static void Start()
     {
         FightEvents.OnFightLoop += FightEvents_OnFightLoop;
+        EventsLuaWithArgs.OnEventsLuaWithArgs += CastingEventHandler;
     }
 
     private static void FightEvents_OnFightLoop(WoWUnit unit, CancelEventArgs cancelable)
@@ -49,7 +58,38 @@ class CombatUtil
 
     public static void Stop()
     {
-        FightEvents.OnFightLoop += FightEvents_OnFightLoop;
+        FightEvents.OnFightLoop -= FightEvents_OnFightLoop;
+        EventsLuaWithArgs.OnEventsLuaWithArgs -= CastingEventHandler;
+    }
+    
+    private static void CastingEventHandler(LuaEventsId id, List<string> args)
+    {
+
+        switch (id)
+        {
+            case LuaEventsId.SPELLCAST_CHANNEL_START:
+                //spellname is Channeling
+                _lastSpell = args[1];
+                _lastCastTimeStamp = DateTime.Now.AddMilliseconds(double.Parse(args[0]));
+                break;
+            case LuaEventsId.SPELLCAST_START:
+                _lastSpell = args[0];
+                _lastCastTimeStamp = DateTime.Now.AddMilliseconds(double.Parse(args[1]));
+                break;
+            case LuaEventsId.SPELLCAST_DELAYED:
+                _lastCastTimeStamp = _lastCastTimeStamp.AddMilliseconds(double.Parse(args[0]));
+                break;
+            case LuaEventsId.SPELLCAST_CHANNEL_UPDATE:
+                _lastCastTimeStamp = DateTime.Now.AddMilliseconds(double.Parse(args[0]));
+                break;
+            case LuaEventsId.SPELLCAST_CHANNEL_STOP:
+            case LuaEventsId.SPELLCAST_STOP:
+            case LuaEventsId.SPELLCAST_INTERRUPTED:
+            case LuaEventsId.SPELLCAST_FAILED:
+                _lastCastTimeStamp = DateTime.Now;
+                _lastSpell = null;
+                break;
+        }
     }
 
     
@@ -120,11 +160,6 @@ class CombatUtil
     {
         var target = ObjectManager.Target;
         return !TraceLine.TraceLineGo(ObjectManager.Me.Position, target.Position, CGWorldFrameHitFlags.HitTestSpellLoS) && predicate(target) ? target : null;
-    }
-
-    public static WoWUnit FindMe()
-    {
-        return ObjectManager.Me;
     }
 
     public static WoWUnit FindMe(Func<WoWUnit, bool> predicate)
@@ -214,7 +249,7 @@ class CombatUtil
 
         MountTask.DismountMount();
 
-        if (ObjectManager.Me.IsCast && !force)
+        if (ObjectManager.Me.IsCasting() && !force)
             return false;
 
         if (ObjectManager.Me.GetMove && spell.Spell.CastTime > 0)
@@ -286,7 +321,7 @@ class CombatUtil
     {
         ulong guid = GetGUIDForLuaGUID(Lua.LuaDoString("guid = UnitGUID('" + luaUnitId + "')", "guid"));
         if (!string.IsNullOrWhiteSpace(luaUnitId))
-            return ObjectManager.GetObjectWoWUnit().Where(o => o.Guid == guid).FirstOrDefault();
+            return ObjectManager.GetObjectWoWUnit().FirstOrDefault(o => o.Guid == guid);
         return null;
     }
 
