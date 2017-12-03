@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Jonas\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_VanillaFightclassFramework.-1776460284.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Jonas\Documents\Visual Studio 2017\Projects\VanillaFightclassFramework" t="IncludeFlat">
+    <e p="C:\Users\Jonas\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_VanillaFightclassFramework.-536731176.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Jonas\Documents\VanillaFightclassFramework" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="VanillaFightclassFramework" t="IncludeRecursive">
         <e p="CombatUtil.cs" t="Include" />

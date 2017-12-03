@@ -208,7 +208,7 @@ class CombatUtil
                 return;
         }
 
-        if (buff.IsKnown() && buff.CanCast() && !target.HaveBuff(buff.Spell.Name))
+        if (!target.HaveBuff(buff.Spell.Name))
         {
             CastSpell(buff, target);
         }
@@ -216,22 +216,7 @@ class CombatUtil
 
     public static void CastBuff(RotationSpell buff)
     {
-        switch (buff.Spell.Name)
-        {
-            case "Power Word: Fortitude" when ObjectManager.Me.HaveBuff("Prayer of Fortitude"):
-                return;
-            case "Divine Spirit" when ObjectManager.Me.HaveBuff("Prayer of Spirit"):
-                return;
-            case "Blessing of Kings" when ObjectManager.Me.HaveBuff("Greater Blessing of Kings"):
-                return;
-            case "Arcane Intellect" when ObjectManager.Me.HaveBuff("Arcane Brilliance"):
-                return;
-        }
-
-        if (buff.IsKnown() && buff.CanCast() && !buff.Spell.HaveBuff)
-        {
-            buff.Spell.Launch(false, false, false, "player");
-        }
+        CastBuff(buff, ObjectManager.Me);
     }
 
     public static bool CastSpell(RotationSpell spell, WoWUnit unit, bool force)
@@ -273,7 +258,8 @@ class CombatUtil
         {
             if (unit.Guid != ObjectManager.Me.Guid)
             {
-                FaceUnit(unit);
+                //FaceUnit(unit);
+                MovementManager.Face(unit);
             }
 
             _disableTargeting = true;
@@ -290,23 +276,22 @@ class CombatUtil
 
     public static float GetGlobalCooldown()
     {
-        //check several spells in case one doesn't have a GCD
-        for (var i = 1; i <= 10; i++)
+        var i = 0;
+        foreach (Spell spell in SpellManager.SpellBook())
         {
-            Spell spell = SpellManager.SpellBook()[i];
-
-            string luaString = @"
-            cooldownLeft = 0;
-
-            local start, duration, enabled = GetSpellCooldown(""{0}"", BOOKTYPE_SPELL);
-            if enabled == 1 and start > 0 and duration > 0 then
-                cooldownLeft = duration - (GetTime() - start)
-            end";
+            if (i >= 10)
+            {
+                break;
+            }
             
-            float duration = Lua.LuaDoString<float>(Extensions.FormatLua(luaString, i), "cooldownLeft");
-            if ((duration <= 1.5 && duration != 0))
-                return spell.GetCooldown();
+            //float duration = SpellManager.GetSpellCooldownTimeLeft(spell.Id) / 1000f;
+            float duration = spell.GetCooldown();
+            if (duration <= 1.5 && duration != 0)
+            {
+                return duration;
+            }
 
+            i++;
         }
         
         return 0;
@@ -347,20 +332,18 @@ class CombatUtil
     public static void Face(Vector3 to, float addRadian = 0)
     {
         ClickToMove.CGPlayer_C__ClickToMove(0, 0, 0, ObjectManager.Me.Guid, (int)ClickToMoveType.Face, (float)System.Math.Atan2(to.Y - ObjectManager.Me.Position.Y, to.X - ObjectManager.Me.Position.X) + addRadian);
-        Thread.Sleep(10);
-        Move.SitStandOrDescend();
-        Lua.LuaDoString("TurnLeftStart();");
-        Lua.LuaDoString("TurnLeftStop();");
+        //Lua.LuaDoString("TurnLeftStart(); TurnLeftStop();");
+        //Lua.LuaDoString("TurnRightStart(); TurnRightStop();");
     }
 
+    /*
+     * with vsync turned on, this function errors for some reason - without vsync on, the Lua turning part gets ignore (which was supposed to nudge the character so the server recognizes changed movement)
+     */
     public static void FaceUnit(WoWUnit unit)
     {
         ClickToMove.CGPlayer_C__ClickToMove(unit.Position.X, unit.Position.Y, unit.Position.Z, unit.Guid, (int)ClickToMoveType.Face, 0.5f);
-        Thread.Sleep(10);
-        Move.SitStandOrDescend();
-        Lua.LuaDoString("TurnLeftStart();");
-        Lua.LuaDoString("TurnLeftStop();");
-        //wManager.Wow.Helpers.Keybindings.PressKeybindings(wManager.Wow.Enums.Keybindings.TURNLEFT);
+        //Lua.LuaDoString("TurnLeftStart(); TurnLeftStop();");
+        //Lua.LuaDoString("TurnRightStart(); TurnRightStop();");
     }
 
     /// <summary>
