@@ -83,6 +83,28 @@ class RotationSpell : RotationAction
     {
         _rank = rank;
     }
+    
+    public int GetHighestRankLua()
+    {
+        string luaString = @"
+        local i = 1;
+        local List = {{}};
+        local spellName, spellRank;            
+
+        while true do
+            spellName, spellRank = GetSpellName(i, BOOKTYPE_SPELL);
+            if not spellName then return table.getn(List) end
+    
+            if spellName == ""{0}"" then
+                _,_,spellRank = string.find(spellRank, "" (%d+)$"");
+                spellRank = tonumber(spellRank);
+                if not spellRank then return 0 end
+                List[spellRank] = i;
+            end
+            i = i + 1;
+        end";
+        return Lua.LuaDoString<int>(Extensions.FormatLua(luaString, Name));
+    }
 
     public int GetRank()
     {
@@ -113,7 +135,7 @@ class RotationSpell : RotationAction
             end
    
             -- use spellName and spellRank here
-            if(spellName == ""{0}"" and (spellRank == ""Rank {1}"" or spellRank == """")) then
+            if(spellName == ""{0}"" and (spellRank == ""Rank {1}"" or spellRank == """" or spellRank == ""Summon"")) then
                 --DEFAULT_CHAT_FRAME:AddMessage('know spell: ' .. spellName);
                 return true;
             end
