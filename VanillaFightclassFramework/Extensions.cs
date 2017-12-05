@@ -136,4 +136,48 @@ public static class Extensions
         }
         return returnValue += "};";
     }
+    
+    public static void DeleteItems(string itemName, int leaveAmount)
+    {
+        var itemQuantity = ItemsManager.GetItemCountByNameLUA(itemName) - leaveAmount;
+        if (string.IsNullOrWhiteSpace(itemName) || itemQuantity <= 0)
+        {
+            return;
+        }
+
+        Logging.WriteFight("Cleaning up:" + itemName);
+
+        var execute =
+            "local itemCount = " + itemQuantity + "; " +
+            "local deleted = 0; " +
+            "for b=0,4 do " +
+            "if GetBagName(b) then " +
+            "for s=1, GetContainerNumSlots(b) do " +
+            "local itemLink = GetContainerItemLink(b, s) " +
+            "if itemLink then " +
+            "local _, stackCount = GetContainerItemInfo(b, s)\t " +
+            "local leftItems = itemCount - deleted; " +
+            "if string.find(itemLink, \"" + itemName + "\") and leftItems > 0 then " +
+            "if stackCount <= 1 then " +
+            "PickupContainerItem(b, s); " +
+            "DeleteCursorItem(); " +
+            "deleted = deleted + 1; " +
+            "else " +
+            "if (leftItems > stackCount) then " +
+            "SplitContainerItem(b, s, stackCount); " +
+            "DeleteCursorItem(); " +
+            "deleted = deleted + stackCount; " +
+            "else " +
+            "SplitContainerItem(b, s, leftItems); " +
+            "DeleteCursorItem(); " +
+            "deleted = deleted + leftItems; " +
+            "end " +
+            "end " +
+            "end " +
+            "end " +
+            "end " +
+            "end " +
+            "end; ";
+        Lua.LuaDoString(execute);
+    }
 }

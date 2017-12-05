@@ -166,6 +166,11 @@ class CombatUtil
     {
         return ObjectManager.Me;
     }
+    
+    public static WoWUnit FindPet(Func<WoWUnit, bool> predicate)
+    {
+        return ObjectManager.Pet;
+    }
 
     public static bool IsAutoRepeating(string name)
     {
