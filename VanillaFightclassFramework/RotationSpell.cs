@@ -103,7 +103,7 @@ class RotationSpell : RotationAction
             end
             i = i + 1;
         end";
-        return Lua.LuaDoString<int>(Extensions.FormatLua(luaString, Name));
+        return Lua.LuaDoString<int>(Extensions.FormatLua(luaString, _name));
     }
 
     public int GetRank()

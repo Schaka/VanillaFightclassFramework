@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="263e5779-d08c-40b1-a455-28bdb95cb541" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.VanillaFightclassFramework/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.VanillaFightclassFramework/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.VanillaFightclassFramework/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.VanillaFightclassFramework/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VanillaFightclassFramework/CombatUtil.cs" afterPath="$PROJECT_DIR$/VanillaFightclassFramework/CombatUtil.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VanillaFightclassFramework/RotationSpell.cs" afterPath="$PROJECT_DIR$/VanillaFightclassFramework/RotationSpell.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +17,7 @@
       <file leaf-file-name="VanillaFightclass.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/VanillaFightclass.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="540">
               <caret line="56" column="79" lean-forward="false" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
               <folding>
                 <marker date="1511984707566" expanded="false" signature="6:544" ph="..." />
@@ -51,7 +50,6 @@
                 <marker date="1511984707566" expanded="true" signature="6583:6651" ph="{...}" />
                 <marker date="1511984707566" expanded="true" signature="6850:7017" ph="{...}" />
                 <marker date="1511984707566" expanded="true" signature="7022:7039" ph="/* SETTINGS ... */" />
-                <marker date="1511984707566" expanded="true" signature="7104:8549" ph="{...}" />
                 <marker date="1511984707566" expanded="true" signature="7373:7411" ph="{...}" />
                 <marker date="1511984707566" expanded="true" signature="7508:7825" ph="{...}" />
                 <marker date="1511984707566" expanded="true" signature="7526:7677" ph="{...}" />
@@ -65,73 +63,103 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CombatUtil.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CombatUtil.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/CombatUtil.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="604">
-              <caret line="418" column="24" lean-forward="true" selection-start-line="418" selection-start-column="24" selection-end-line="418" selection-end-column="24" />
+              <caret line="418" column="0" lean-forward="false" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
               <folding>
-                <marker date="1512294570266" expanded="true" signature="6:438" ph="..." />
-                <marker date="1512294570266" expanded="true" signature="456:14250" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="754:944" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="1216:1358" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="1449:1546" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="1489:1540" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="1577:1719" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="1803:2941" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="1830:2935" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="3016:3429" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="3497:3580" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="3654:3739" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="3814:3904" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="3980:4072" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="4151:4245" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="4325:4421" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="4525:4603" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="4711:4803" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="4900:5184" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="5252:5465" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="5530:5575" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="5628:6262" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="6296:6444" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="6513:7004" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="6552:6893" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="6941:6998" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="7057:7111" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="7192:9018" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="7365:7411" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="7517:7563" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="7981:8367" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="8004:8145" ph="/* spell.Launch(true, true, false); ... */" />
-                <marker date="1512294570266" expanded="true" signature="8380:8991" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="8442:8548" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="8787:8942" ph="/* SpellManager.CastSpellByNameOn(spell.FullName(), GetLuaId(unit)); ... */" />
-                <marker date="1512294570266" expanded="true" signature="9063:9555" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="9146:9522" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="9181:9232" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="9433:9494" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="9624:9682" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="9751:10029" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="10086:10259" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="10315:10557" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="10463:10520" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="10619:10973" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="10848:10967" ph="/* Lua.LuaDoString(&quot;TurnLeftStart(); TurnLeftStop();&quot;); ... */" />
-                <marker date="1512294570266" expanded="true" signature="10979:11194" ph="/* with vsync turned on, this function errors for some reason - without vsync on, the Lua turning part gets ignor ... */" />
-                <marker date="1512294570266" expanded="true" signature="11240:11520" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="11395:11514" ph="/* Lua.LuaDoString(&quot;TurnLeftStart(); TurnLeftStop();&quot;); ... */" />
-                <marker date="1512294570266" expanded="true" signature="11526:11840" ph="/// Used to calculate new position by parameter. ... " />
-                <marker date="1512294570266" expanded="true" signature="11928:12066" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="12072:12330" ph="/// Used to calculate atan2 of two positions. ... " />
-                <marker date="1512294570266" expanded="true" signature="12415:12510" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="12517:12551" ph="/* NOT THREAD SAFE! ... */" />
-                <marker date="1512294570266" expanded="true" signature="12599:12830" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="12901:13323" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="12963:13003" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="13372:14065" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="13434:13474" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="13714:13858" ph="{...}" />
-                <marker date="1512294570266" expanded="true" signature="14120:14248" ph="{...}" />
+                <marker date="1512469868321" expanded="false" signature="6:438" ph="..." />
+                <marker date="1512469868321" expanded="true" signature="456:14366" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="754:944" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="1216:1358" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="1449:1546" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="1489:1540" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="1577:1719" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="1803:2941" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="1830:2935" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="3016:3429" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="3497:3580" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="3654:3739" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="3814:3904" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="3980:4072" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="4151:4245" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="4325:4421" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="4525:4603" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="4711:4803" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="4900:5184" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="5252:5465" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="5530:5575" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="5645:5691" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="5744:6378" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="6412:6560" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="6629:7120" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="6668:7009" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="7057:7114" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="7173:7227" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="7308:9134" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="7481:7527" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="7633:7679" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="8097:8483" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="8120:8261" ph="/* spell.Launch(true, true, false); ... */" />
+                <marker date="1512469868321" expanded="true" signature="8496:9107" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="8558:8664" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="8903:9058" ph="/* SpellManager.CastSpellByNameOn(spell.FullName(), GetLuaId(unit)); ... */" />
+                <marker date="1512469868321" expanded="true" signature="9179:9671" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="9262:9638" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="9297:9348" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="9549:9610" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="9740:9798" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="9867:10145" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="10202:10375" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="10431:10673" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="10579:10636" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="10735:11089" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="10964:11083" ph="/* Lua.LuaDoString(&quot;TurnLeftStart(); TurnLeftStop();&quot;); ... */" />
+                <marker date="1512469868321" expanded="true" signature="11095:11310" ph="/* with vsync turned on, this function errors for some reason - without vsync on, the Lua turning part gets ignor ... */" />
+                <marker date="1512469868321" expanded="true" signature="11356:11636" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="11511:11630" ph="/* Lua.LuaDoString(&quot;TurnLeftStart(); TurnLeftStop();&quot;); ... */" />
+                <marker date="1512469868321" expanded="true" signature="11642:11956" ph="/// Used to calculate new position by parameter. ... " />
+                <marker date="1512469868321" expanded="true" signature="12044:12182" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="12188:12446" ph="/// Used to calculate atan2 of two positions. ... " />
+                <marker date="1512469868321" expanded="true" signature="12531:12626" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="12633:12667" ph="/* NOT THREAD SAFE! ... */" />
+                <marker date="1512469868321" expanded="true" signature="12715:12946" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="13017:13439" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="13079:13119" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="13488:14181" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="13550:13590" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="13830:13974" ph="{...}" />
+                <marker date="1512469868321" expanded="true" signature="14236:14364" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RotationSpell.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationSpell.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="105" column="73" lean-forward="false" selection-start-line="105" selection-start-column="73" selection-end-line="105" selection-end-column="73" />
+              <folding>
+                <marker date="1512474965918" expanded="false" signature="6:333" ph="..." />
+                <marker date="1512474965918" expanded="true" signature="372:4823" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="523:627" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="655:1777" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="1804:1865" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="1897:2299" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="1948:2293" ph="/* string luaString = @&quot; ... */" />
+                <marker date="1512474965918" expanded="true" signature="2337:2371" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="2411:3084" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="3110:3149" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="3176:3215" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="3246:3331" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="3358:4190" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="3373:3519" ph="/* not a great runtime solution, but spellbook should get updated on newly learned spells ... */" />
+                <marker date="1512474965918" expanded="true" signature="4247:4456" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="4482:4525" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="4564:4634" ph="{...}" />
+                <marker date="1512474965918" expanded="true" signature="4679:4816" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -209,6 +237,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/CombatUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationSpell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationLua.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationStep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationAction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -220,6 +249,7 @@
         <option value="$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs" />
         <option value="$PROJECT_DIR$/VanillaFightclassFramework/VanillaFightclass.cs" />
         <option value="$PROJECT_DIR$/VanillaFightclassFramework/CombatUtil.cs" />
+        <option value="$PROJECT_DIR$/VanillaFightclassFramework/RotationSpell.cs" />
       </list>
     </option>
   </component>
@@ -313,11 +343,12 @@
       <updated>1511813892656</updated>
       <workItem from="1511813893834" duration="1097000" />
       <workItem from="1512294505490" duration="231000" />
+      <workItem from="1512474923031" duration="59000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1328000" />
+    <option name="totallyTimeSpent" value="1387000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,6 +372,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -367,157 +399,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/VanillaFightclass.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511984707566" expanded="false" signature="6:544" ph="..." />
-            <marker date="1511984707566" expanded="true" signature="578:7020" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="761:858" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="924:1063" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="1527:2724" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="2755:3299" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="3368:3476" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="3423:3470" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="3549:3965" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="3575:3959" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="3994:5874" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="4028:5868" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="4054:5614" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="4182:5600" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="4444:5581" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="4705:4815" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="4878:5081" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="4956:5055" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="5165:5281" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="5405:5559" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="5632:5728" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="5906:6000" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="5944:5994" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="6029:6453" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="6240:6406" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="6311:6394" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="6480:6813" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="6583:6651" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="6850:7017" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="7022:7039" ph="/* SETTINGS ... */" />
-            <marker date="1511984707566" expanded="true" signature="7104:8549" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="7373:7411" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="7508:7825" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="7526:7677" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="7705:7819" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="7856:8547" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="7874:8403" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="8019:8332" ph="{...}" />
-            <marker date="1511984707566" expanded="true" signature="8431:8519" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="74" lean-forward="false" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationAction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511776084671" expanded="false" signature="6:149" ph="..." />
-            <marker date="1511776084671" expanded="true" signature="175:253" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationLua.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511812208314" expanded="false" signature="6:177" ph="..." />
-            <marker date="1511812208314" expanded="true" signature="213:749" ph="{...}" />
-            <marker date="1511812208314" expanded="true" signature="350:428" ph="{...}" />
-            <marker date="1511812208314" expanded="true" signature="489:680" ph="{...}" />
-            <marker date="1511812208314" expanded="true" signature="540:615" ph="{...}" />
-            <marker date="1511812208314" expanded="true" signature="706:747" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationStep.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511776980873" expanded="false" signature="6:153" ph="..." />
-            <marker date="1511776980873" expanded="true" signature="173:1941" ph="{...}" />
-            <marker date="1511776980873" expanded="true" signature="530:692" ph="{...}" />
-            <marker date="1511776980873" expanded="true" signature="894:948" ph="{...}" />
-            <marker date="1511776980873" expanded="true" signature="1208:1286" ph="{...}" />
-            <marker date="1511776980873" expanded="true" signature="1317:1939" ph="{...}" />
-            <marker date="1511776980873" expanded="true" signature="1332:1578" ph="/* predicate is executed separately from targetfinder predicate ... */" />
-            <marker date="1511776980873" expanded="true" signature="1841:1911" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationStep.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511776980873" expanded="false" signature="6:153" ph="..." />
-            <marker date="1511776980873" expanded="true" signature="173:1941" ph="{...}" />
-            <marker date="1511776980873" expanded="true" signature="530:692" ph="{...}" />
-            <marker date="1511776980873" expanded="true" signature="894:948" ph="{...}" />
-            <marker date="1511776980873" expanded="true" signature="1208:1286" ph="{...}" />
-            <marker date="1511776980873" expanded="true" signature="1317:1939" ph="{...}" />
-            <marker date="1511776980873" expanded="true" signature="1332:1578" ph="/* predicate is executed separately from targetfinder predicate ... */" />
-            <marker date="1511776980873" expanded="true" signature="1841:1911" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="74" lean-forward="false" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationAction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511776084671" expanded="false" signature="6:149" ph="..." />
-            <marker date="1511776084671" expanded="true" signature="175:253" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationLua.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511812208314" expanded="false" signature="6:177" ph="..." />
-            <marker date="1511812208314" expanded="true" signature="213:749" ph="{...}" />
-            <marker date="1511812208314" expanded="true" signature="350:428" ph="{...}" />
-            <marker date="1511812208314" expanded="true" signature="489:680" ph="{...}" />
-            <marker date="1511812208314" expanded="true" signature="540:615" ph="{...}" />
-            <marker date="1511812208314" expanded="true" signature="706:747" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/VanillaFightclass.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="540">
           <caret line="56" column="79" lean-forward="false" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
           <folding>
             <marker date="1511984707566" expanded="false" signature="6:544" ph="..." />
@@ -550,7 +432,324 @@
             <marker date="1511984707566" expanded="true" signature="6583:6651" ph="{...}" />
             <marker date="1511984707566" expanded="true" signature="6850:7017" ph="{...}" />
             <marker date="1511984707566" expanded="true" signature="7022:7039" ph="/* SETTINGS ... */" />
-            <marker date="1511984707566" expanded="true" signature="7104:8549" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7373:7411" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7508:7825" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7526:7677" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7705:7819" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7856:8547" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7874:8403" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="8019:8332" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="8431:8519" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="74" lean-forward="false" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511776084671" expanded="false" signature="6:149" ph="..." />
+            <marker date="1511776084671" expanded="true" signature="175:253" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationLua.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511812208314" expanded="false" signature="6:177" ph="..." />
+            <marker date="1511812208314" expanded="true" signature="213:749" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="350:428" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="489:680" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="540:615" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="706:747" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationStep.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511776980873" expanded="false" signature="6:153" ph="..." />
+            <marker date="1511776980873" expanded="true" signature="173:1941" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="530:692" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="894:948" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1208:1286" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1317:1939" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1332:1578" ph="/* predicate is executed separately from targetfinder predicate ... */" />
+            <marker date="1511776980873" expanded="true" signature="1841:1911" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/CombatUtil.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6270">
+          <caret line="418" column="0" lean-forward="true" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
+          <folding>
+            <marker date="1512469868321" expanded="false" signature="6:438" ph="..." />
+            <marker date="1512469868321" expanded="true" signature="456:14366" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="754:944" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1216:1358" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1449:1546" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1489:1540" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1577:1719" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1803:2941" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1830:2935" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="3016:3429" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="3497:3580" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="3654:3739" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="3814:3904" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="3980:4072" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="4151:4245" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="4325:4421" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="4525:4603" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="4711:4803" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="4900:5184" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="5252:5465" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="5530:5575" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="5645:5691" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="5744:6378" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="6412:6560" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="6629:7120" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="6668:7009" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="7057:7114" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="7173:7227" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="7308:9134" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="7481:7527" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="7633:7679" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="8097:8483" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="8120:8261" ph="/* spell.Launch(true, true, false); ... */" />
+            <marker date="1512469868321" expanded="true" signature="8496:9107" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="8558:8664" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="8903:9058" ph="/* SpellManager.CastSpellByNameOn(spell.FullName(), GetLuaId(unit)); ... */" />
+            <marker date="1512469868321" expanded="true" signature="9179:9671" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="9262:9638" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="9297:9348" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="9549:9610" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="9740:9798" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="9867:10145" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="10202:10375" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="10431:10673" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="10579:10636" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="10735:11089" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="10964:11083" ph="/* Lua.LuaDoString(&quot;TurnLeftStart(); TurnLeftStop();&quot;); ... */" />
+            <marker date="1512469868321" expanded="true" signature="11095:11310" ph="/* with vsync turned on, this function errors for some reason - without vsync on, the Lua turning part gets ignor ... */" />
+            <marker date="1512469868321" expanded="true" signature="11356:11636" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="11511:11630" ph="/* Lua.LuaDoString(&quot;TurnLeftStart(); TurnLeftStop();&quot;); ... */" />
+            <marker date="1512469868321" expanded="true" signature="11642:11956" ph="/// Used to calculate new position by parameter. ... " />
+            <marker date="1512469868321" expanded="true" signature="12044:12182" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="12188:12446" ph="/// Used to calculate atan2 of two positions. ... " />
+            <marker date="1512469868321" expanded="true" signature="12531:12626" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="12633:12667" ph="/* NOT THREAD SAFE! ... */" />
+            <marker date="1512469868321" expanded="true" signature="12715:12946" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="13017:13439" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="13079:13119" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="13488:14181" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="13550:13590" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="13830:13974" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="14236:14364" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/VanillaFightclass.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511984707566" expanded="false" signature="6:544" ph="..." />
+            <marker date="1511984707566" expanded="true" signature="578:7020" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="761:858" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="924:1063" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="1527:2724" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="2755:3299" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="3368:3476" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="3423:3470" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="3549:3965" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="3575:3959" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="3994:5874" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4028:5868" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4054:5614" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4182:5600" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4444:5581" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4705:4815" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4878:5081" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4956:5055" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="5165:5281" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="5405:5559" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="5632:5728" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="5906:6000" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="5944:5994" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6029:6453" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6240:6406" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6311:6394" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6480:6813" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6583:6651" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6850:7017" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7022:7039" ph="/* SETTINGS ... */" />
+            <marker date="1511984707566" expanded="true" signature="7373:7411" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7508:7825" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7526:7677" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7705:7819" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7856:8547" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7874:8403" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="8019:8332" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="8431:8519" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="74" lean-forward="false" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511776084671" expanded="false" signature="6:149" ph="..." />
+            <marker date="1511776084671" expanded="true" signature="175:253" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationLua.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511812208314" expanded="false" signature="6:177" ph="..." />
+            <marker date="1511812208314" expanded="true" signature="213:749" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="350:428" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="489:680" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="540:615" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="706:747" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationStep.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511776980873" expanded="false" signature="6:153" ph="..." />
+            <marker date="1511776980873" expanded="true" signature="173:1941" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="530:692" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="894:948" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1208:1286" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1317:1939" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1332:1578" ph="/* predicate is executed separately from targetfinder predicate ... */" />
+            <marker date="1511776980873" expanded="true" signature="1841:1911" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationStep.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511776980873" expanded="false" signature="6:153" ph="..." />
+            <marker date="1511776980873" expanded="true" signature="173:1941" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="530:692" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="894:948" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1208:1286" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1317:1939" ph="{...}" />
+            <marker date="1511776980873" expanded="true" signature="1332:1578" ph="/* predicate is executed separately from targetfinder predicate ... */" />
+            <marker date="1511776980873" expanded="true" signature="1841:1911" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationRawAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="74" lean-forward="false" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511776084671" expanded="false" signature="6:149" ph="..." />
+            <marker date="1511776084671" expanded="true" signature="175:253" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationLua.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511812208314" expanded="false" signature="6:177" ph="..." />
+            <marker date="1511812208314" expanded="true" signature="213:749" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="350:428" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="489:680" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="540:615" ph="{...}" />
+            <marker date="1511812208314" expanded="true" signature="706:747" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/VanillaFightclass.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="56" column="79" lean-forward="false" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
+          <folding>
+            <marker date="1511984707566" expanded="false" signature="6:544" ph="..." />
+            <marker date="1511984707566" expanded="true" signature="578:7020" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="761:858" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="924:1063" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="1527:2724" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="2755:3299" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="3368:3476" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="3423:3470" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="3549:3965" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="3575:3959" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="3994:5874" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4028:5868" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4054:5614" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4182:5600" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4444:5581" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4705:4815" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4878:5081" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="4956:5055" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="5165:5281" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="5405:5559" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="5632:5728" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="5906:6000" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="5944:5994" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6029:6453" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6240:6406" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6311:6394" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6480:6813" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6583:6651" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="6850:7017" ph="{...}" />
+            <marker date="1511984707566" expanded="true" signature="7022:7039" ph="/* SETTINGS ... */" />
             <marker date="1511984707566" expanded="true" signature="7373:7411" ph="{...}" />
             <marker date="1511984707566" expanded="true" signature="7508:7825" ph="{...}" />
             <marker date="1511984707566" expanded="true" signature="7526:7677" ph="{...}" />
@@ -566,69 +765,97 @@
     <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/CombatUtil.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
-          <caret line="418" column="24" lean-forward="true" selection-start-line="418" selection-start-column="24" selection-end-line="418" selection-end-column="24" />
+          <caret line="418" column="0" lean-forward="false" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
           <folding>
-            <marker date="1512294570266" expanded="true" signature="6:438" ph="..." />
-            <marker date="1512294570266" expanded="true" signature="456:14250" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="754:944" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="1216:1358" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="1449:1546" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="1489:1540" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="1577:1719" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="1803:2941" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="1830:2935" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="3016:3429" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="3497:3580" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="3654:3739" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="3814:3904" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="3980:4072" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="4151:4245" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="4325:4421" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="4525:4603" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="4711:4803" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="4900:5184" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="5252:5465" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="5530:5575" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="5628:6262" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="6296:6444" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="6513:7004" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="6552:6893" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="6941:6998" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="7057:7111" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="7192:9018" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="7365:7411" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="7517:7563" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="7981:8367" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="8004:8145" ph="/* spell.Launch(true, true, false); ... */" />
-            <marker date="1512294570266" expanded="true" signature="8380:8991" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="8442:8548" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="8787:8942" ph="/* SpellManager.CastSpellByNameOn(spell.FullName(), GetLuaId(unit)); ... */" />
-            <marker date="1512294570266" expanded="true" signature="9063:9555" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="9146:9522" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="9181:9232" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="9433:9494" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="9624:9682" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="9751:10029" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="10086:10259" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="10315:10557" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="10463:10520" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="10619:10973" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="10848:10967" ph="/* Lua.LuaDoString(&quot;TurnLeftStart(); TurnLeftStop();&quot;); ... */" />
-            <marker date="1512294570266" expanded="true" signature="10979:11194" ph="/* with vsync turned on, this function errors for some reason - without vsync on, the Lua turning part gets ignor ... */" />
-            <marker date="1512294570266" expanded="true" signature="11240:11520" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="11395:11514" ph="/* Lua.LuaDoString(&quot;TurnLeftStart(); TurnLeftStop();&quot;); ... */" />
-            <marker date="1512294570266" expanded="true" signature="11526:11840" ph="/// Used to calculate new position by parameter. ... " />
-            <marker date="1512294570266" expanded="true" signature="11928:12066" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="12072:12330" ph="/// Used to calculate atan2 of two positions. ... " />
-            <marker date="1512294570266" expanded="true" signature="12415:12510" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="12517:12551" ph="/* NOT THREAD SAFE! ... */" />
-            <marker date="1512294570266" expanded="true" signature="12599:12830" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="12901:13323" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="12963:13003" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="13372:14065" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="13434:13474" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="13714:13858" ph="{...}" />
-            <marker date="1512294570266" expanded="true" signature="14120:14248" ph="{...}" />
+            <marker date="1512469868321" expanded="false" signature="6:438" ph="..." />
+            <marker date="1512469868321" expanded="true" signature="456:14366" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="754:944" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1216:1358" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1449:1546" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1489:1540" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1577:1719" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1803:2941" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="1830:2935" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="3016:3429" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="3497:3580" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="3654:3739" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="3814:3904" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="3980:4072" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="4151:4245" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="4325:4421" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="4525:4603" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="4711:4803" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="4900:5184" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="5252:5465" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="5530:5575" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="5645:5691" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="5744:6378" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="6412:6560" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="6629:7120" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="6668:7009" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="7057:7114" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="7173:7227" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="7308:9134" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="7481:7527" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="7633:7679" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="8097:8483" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="8120:8261" ph="/* spell.Launch(true, true, false); ... */" />
+            <marker date="1512469868321" expanded="true" signature="8496:9107" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="8558:8664" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="8903:9058" ph="/* SpellManager.CastSpellByNameOn(spell.FullName(), GetLuaId(unit)); ... */" />
+            <marker date="1512469868321" expanded="true" signature="9179:9671" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="9262:9638" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="9297:9348" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="9549:9610" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="9740:9798" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="9867:10145" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="10202:10375" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="10431:10673" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="10579:10636" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="10735:11089" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="10964:11083" ph="/* Lua.LuaDoString(&quot;TurnLeftStart(); TurnLeftStop();&quot;); ... */" />
+            <marker date="1512469868321" expanded="true" signature="11095:11310" ph="/* with vsync turned on, this function errors for some reason - without vsync on, the Lua turning part gets ignor ... */" />
+            <marker date="1512469868321" expanded="true" signature="11356:11636" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="11511:11630" ph="/* Lua.LuaDoString(&quot;TurnLeftStart(); TurnLeftStop();&quot;); ... */" />
+            <marker date="1512469868321" expanded="true" signature="11642:11956" ph="/// Used to calculate new position by parameter. ... " />
+            <marker date="1512469868321" expanded="true" signature="12044:12182" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="12188:12446" ph="/// Used to calculate atan2 of two positions. ... " />
+            <marker date="1512469868321" expanded="true" signature="12531:12626" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="12633:12667" ph="/* NOT THREAD SAFE! ... */" />
+            <marker date="1512469868321" expanded="true" signature="12715:12946" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="13017:13439" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="13079:13119" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="13488:14181" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="13550:13590" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="13830:13974" ph="{...}" />
+            <marker date="1512469868321" expanded="true" signature="14236:14364" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VanillaFightclassFramework/RotationSpell.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="105" column="73" lean-forward="false" selection-start-line="105" selection-start-column="73" selection-end-line="105" selection-end-column="73" />
+          <folding>
+            <marker date="1512474965918" expanded="false" signature="6:333" ph="..." />
+            <marker date="1512474965918" expanded="true" signature="372:4823" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="523:627" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="655:1777" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="1804:1865" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="1897:2299" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="1948:2293" ph="/* string luaString = @&quot; ... */" />
+            <marker date="1512474965918" expanded="true" signature="2337:2371" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="2411:3084" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="3110:3149" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="3176:3215" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="3246:3331" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="3358:4190" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="3373:3519" ph="/* not a great runtime solution, but spellbook should get updated on newly learned spells ... */" />
+            <marker date="1512474965918" expanded="true" signature="4247:4456" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="4482:4525" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="4564:4634" ph="{...}" />
+            <marker date="1512474965918" expanded="true" signature="4679:4816" ph="{...}" />
           </folding>
         </state>
       </provider>
