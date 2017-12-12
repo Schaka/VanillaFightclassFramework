@@ -116,6 +116,7 @@ class RotationSpell : RotationAction
         return _rank ?? 0;
     }
 
+
     public string FullName()
     {
         return _rank != null ? (_name + "(Rank " + _rank + ")") : (_name + "()");
@@ -126,15 +127,20 @@ class RotationSpell : RotationAction
         //not a great runtime solution, but spellbook should get updated on newly learned spells
         //this SHOULD check if we have the rank available
         string luaString = @"
-        local i = 1
+        local i = 1;
+        local rank = {1};
+
         while true do
             local spellName, spellRank = GetSpellName(i, BOOKTYPE_SPELL);
             if not spellName then
                 break;
             end
-   
+
+            local _, _, currentRankString = string.find(spellRank, "" (%d+)$"");
+            local currentRank = tonumber(currentRankString);
+            
             -- use spellName and spellRank here
-           if(spellName == ""{0}"" and (spellRank == ""Rank {1}"" or spellRank == """" or spellRank == ""Summon"")) then
+            if(spellName == ""{0}"" and ((currentRank and currentRank > rank) or spellRank == ""Rank {1}"" or spellRank == """" or spellRank == ""Summon"")) then
                 --DEFAULT_CHAT_FRAME:AddMessage('know spell: ' .. spellName);
                 return true;
             end
