@@ -83,7 +83,7 @@ class RotationSpell : RotationAction
     {
         _rank = rank;
     }
-    
+
     public int GetHighestRankLua()
     {
         string luaString = @"
@@ -116,10 +116,9 @@ class RotationSpell : RotationAction
         return _rank ?? 0;
     }
 
-
     public string FullName()
     {
-        return _rank != null ? (_name + "(Rank " + _rank + ")") : _name;
+        return _rank != null ? (_name + "(Rank " + _rank + ")") : (_name + "()");
     }
 
     public bool IsKnown()
@@ -135,7 +134,7 @@ class RotationSpell : RotationAction
             end
    
             -- use spellName and spellRank here
-            if(spellName == ""{0}"" and (spellRank == ""Rank {1}"" or spellRank == """" or spellRank == ""Summon"")) then
+           if(spellName == ""{0}"" and (spellRank == ""Rank {1}"" or spellRank == """" or spellRank == ""Summon"")) then
                 --DEFAULT_CHAT_FRAME:AddMessage('know spell: ' .. spellName);
                 return true;
             end
@@ -145,7 +144,7 @@ class RotationSpell : RotationAction
         return false;";
         return Lua.LuaDoString<bool>(Extensions.FormatLua(luaString, _name, GetRank()));
     }
-    
+
     public bool Execute(WoWUnit target, bool force)
     {
         bool success = CombatUtil.CastSpell(this, target, force);
@@ -169,5 +168,5 @@ class RotationSpell : RotationAction
         RotationSpell otherObj = (RotationSpell)obj;
         return _name.Equals(otherObj._name) && _rank == otherObj._rank;
     }
-    
+
 }
