@@ -40,19 +40,25 @@ class CombatUtil
     public static string CurrentSpell => ObjectManager.Me.CastingSpell != null ? ObjectManager.Me.CastingSpell.Name : _lastSpell;
 
     public static bool IsCasting => ObjectManager.Me.IsCast || _lastCastTimeStamp > DateTime.Now;
-    
-    
+
+
     public static void Start()
     {
         FightEvents.OnFightLoop += FightEvents_OnFightLoop;
+        FightEvents.OnFightEnd += FightEventsOnOnFightEnd;
         EventsLuaWithArgs.OnEventsLuaWithArgs += CastingEventHandler;
+    }
+
+    private static void FightEventsOnOnFightEnd(ulong guid1)
+    {
+        _disableTargeting = false;
     }
 
     private static void FightEvents_OnFightLoop(WoWUnit unit, CancelEventArgs cancelable)
     {
         while (_disableTargeting)
         {
-            Thread.Sleep(100);
+            Thread.Sleep(20);
         }
     }
 
@@ -61,7 +67,7 @@ class CombatUtil
         FightEvents.OnFightLoop -= FightEvents_OnFightLoop;
         EventsLuaWithArgs.OnEventsLuaWithArgs -= CastingEventHandler;
     }
-    
+
     private static void CastingEventHandler(LuaEventsId id, List<string> args)
     {
 
@@ -92,7 +98,7 @@ class CombatUtil
         }
     }
 
-    
+
 
     public static WoWUnit FindFriend(Func<WoWUnit, bool> predicate)
     {
@@ -166,11 +172,6 @@ class CombatUtil
     {
         return ObjectManager.Me;
     }
-    
-    public static WoWUnit FindPet(Func<WoWUnit, bool> predicate)
-    {
-        return ObjectManager.Pet;
-    }
 
     public static bool IsAutoRepeating(string name)
     {
@@ -239,6 +240,12 @@ class CombatUtil
 
         MountTask.DismountMount();
 
+        //already wanding, don't turn it on again!
+        if (spell.Spell.Name == "Shoot" && IsAutoRepeating("Shoot"))
+        {
+            return true;
+        }
+
         if (ObjectManager.Me.IsCasting() && !force)
             return false;
 
@@ -261,20 +268,36 @@ class CombatUtil
         }
         else
         {
-            if (unit.Guid != ObjectManager.Me.Guid)
+            //don't switch target if targeting enemy - rely on auto selfcast 
+            WoWUnit temp = ObjectManager.Target;
+            bool onSelf = unit.Guid == ObjectManager.Me.Guid;
+
+            if (!onSelf)
             {
                 //FaceUnit(unit);
                 MovementManager.Face(unit);
+                _disableTargeting = true;
+                TargetUnit(unit);
             }
 
-            _disableTargeting = true;
-            WoWUnit temp = ObjectManager.Target;
-            TargetUnit(unit);
-            Lua.LuaDoString("CastSpellByName(\"" + spell.FullName() + "\")");
-            TargetUnit(temp);
-            //SpellManager.CastSpellByNameOn(spell.FullName(), GetLuaId(unit));
-            //Interact.InteractObject also works and can be used to target another unit
-            _disableTargeting = false;
+
+            Lua.LuaDoString($"CastSpellByName('{spell.FullName()}', {onSelf})");
+
+            if (!onSelf)
+            {
+                if (temp.Guid == 0 || !temp.IsValid)
+                {
+                    Lua.LuaDoString("ClearTarget();");
+                }
+                else
+                {
+                    TargetUnit(temp);
+                }
+
+                //SpellManager.CastSpellByNameOn(spell.FullName(), GetLuaId(unit));
+                //Interact.InteractObject also works and can be used to target another unit
+                _disableTargeting = false;
+            }
         }
         return true;
     }
@@ -288,7 +311,7 @@ class CombatUtil
             {
                 break;
             }
-            
+
             //float duration = SpellManager.GetSpellCooldownTimeLeft(spell.Id) / 1000f;
             float duration = spell.GetCooldown();
             if (duration <= 1.5 && duration != 0)
@@ -298,7 +321,7 @@ class CombatUtil
 
             i++;
         }
-        
+
         return 0;
     }
 
