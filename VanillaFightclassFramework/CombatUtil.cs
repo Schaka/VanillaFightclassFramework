@@ -281,7 +281,7 @@ class CombatUtil
             }
 
 
-            Lua.LuaDoString($"CastSpellByName('{spell.FullName()}', {onSelf})");
+            Lua.LuaDoString($"CastSpellByName('{spell.FullName()}', {onSelf.ToString().ToLower()})");
 
             if (!onSelf)
             {
