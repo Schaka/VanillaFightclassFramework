@@ -26,6 +26,42 @@ class RotationSpell : RotationAction
         this.Spell = new Spell(name);
     }
 
+    public bool NotEnoughMana()
+    {
+        string luaString = @"
+        local i = 1
+        local rank = {1};
+        local lastIndex = 0;
+        local lastRank = ""Rank 1"";
+        while true do
+            local spellName, spellRank = GetSpellName(i, BOOKTYPE_SPELL);
+            if not spellName then
+                break;
+            end
+   
+            -- use spellName and spellRank here
+            if(spellName == ""{0}"" and (rank == 0 or (rank > 0 and (spellRank == ""Rank {1}"" or spellRank == """" or spellRank == ""Summon"" or spellRank == ""Shapeshift"")))) then
+                --DEFAULT_CHAT_FRAME:AddMessage('isUsable: ' .. spellName);
+                lastIndex = i;
+                lastRank = spellRank;
+            end
+
+            i = i + 1;
+        end
+
+        if (lastIndex ~= 0) then
+            --DEFAULT_CHAT_FRAME:AddMessage('isUsable: ' .. '{0}' .. lastRank);
+            PickupSpell(lastIndex, BOOKTYPE_SPELL);
+            PlaceAction(1);
+            ClearCursor();
+            local isUsable, notEnoughMana = IsUsableAction(1);
+            return notEnoughMana;
+        end
+        
+        return false;";
+        return Lua.LuaDoString<bool>(Extensions.FormatLua(luaString, Spell.Name, LuaRank()));
+    }
+
     public bool IsUsable()
     {
         string luaString = @"
@@ -40,7 +76,7 @@ class RotationSpell : RotationAction
             end
    
             -- use spellName and spellRank here
-            if(spellName == ""{0}"" and (rank == 0 or (rank > 0 and (spellRank == ""Rank {1}"" or spellRank == """" or spellRank == ""Summon"")))) then
+            if(spellName == ""{0}"" and (rank == 0 or (rank > 0 and (spellRank == ""Rank {1}"" or spellRank == """" or spellRank == ""Summon"" or spellRank == ""Shapeshift"")))) then
                 --DEFAULT_CHAT_FRAME:AddMessage('isUsable: ' .. spellName);
                 lastIndex = i;
                 lastRank = spellRank;
@@ -140,7 +176,7 @@ class RotationSpell : RotationAction
             local currentRank = tonumber(currentRankString);
             
             -- use spellName and spellRank here
-            if(spellName == ""{0}"" and ((currentRank and currentRank > rank) or spellRank == ""Rank {1}"" or spellRank == """" or spellRank == ""Summon"")) then
+            if(spellName == ""{0}"" and ((currentRank and currentRank > rank) or spellRank == ""Rank {1}"" or spellRank == """" or spellRank == ""Summon"" or spellRank == ""Shapeshift"")) then
                 --DEFAULT_CHAT_FRAME:AddMessage('know spell: ' .. spellName);
                 return true;
             end

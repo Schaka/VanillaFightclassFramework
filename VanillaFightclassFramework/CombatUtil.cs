@@ -227,6 +227,27 @@ class CombatUtil
 
     public static bool CastSpell(RotationSpell spell, WoWUnit unit, bool force)
     {
+        //silly vanilla logic
+        if (unit != null && unit.IsValid && unit.IsAlive && spell.IsKnown() && spell.GetCooldown() == 0 && !spell.IsUsable() && !spell.NotEnoughMana())
+        {
+            if (ObjectManager.Me.HaveBuff("Bear Form"))
+            {
+                Lua.LuaDoString(@"CastSpellByName(""Bear Form"", true)");
+            }
+            if (ObjectManager.Me.HaveBuff("Dire Bear Form"))
+            {
+                Lua.LuaDoString(@"CastSpellByName(""Dire Bear Form"", true)");
+            }
+            if (ObjectManager.Me.HaveBuff("Cat Form"))
+            {
+                Lua.LuaDoString(@"CastSpellByName(""Cat Form"", true)");
+            }
+            if (ObjectManager.Me.HaveBuff("Ghost Wolf"))
+            {
+                Lua.LuaDoString(@"CastSpellByName(""Ghost Wolf"", true)");
+            }
+        }
+
         // targetfinder function already checks that they are in LoS
         if (unit == null || !spell.IsKnown() || !spell.CanCast() || !unit.IsValid || unit.IsDead)
         {
