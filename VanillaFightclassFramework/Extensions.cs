@@ -13,7 +13,7 @@ public static class Extensions
     {
         string luaString = @"hasDebuff = false;
         for i=1,40 do
-	        local _, _ debuffType = UnitDebuff(""{1}"", i);
+	        local texture, count, debuffType = UnitDebuff(""{1}"", i);
             if debuffType == ""{0}"" then
                 hasDebuff = true
                 break;
