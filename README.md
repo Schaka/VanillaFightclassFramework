@@ -1,4 +1,4 @@
-#wRobot Fightclass Framework for Vanilla
+# wRobot Fightclass Framework for Vanilla
 Please check the sample code on how to use it.
 You can create new implementation of the RotationAction interface, but given implementations should suffice.
 
